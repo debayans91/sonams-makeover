@@ -1,48 +1,119 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff0f0;
+    background-color: #fffaf9;
     color: #333;
 }
+
 header {
     background-color: peachpuff;
-    padding: 20px;
-    text-align: center;
-}
-nav {
-    text-align: center;
-    margin: 10px 0;
-}
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #b95c5c;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-.hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #ffe5e5;
-}
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff9999;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: peachpuff;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
-    height: 80px;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #b95c5c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero h2 {
+    font-size: 3em;
     margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #ff8a8a;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e76f6f;
+}
+
+main {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background-color: #ff8a8a;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #e76f6f;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: peachpuff;
+    margin-top: 40px;
 }

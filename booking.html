@@ -1,30 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Booking - Sonam's Makeover</title>
+    <title>Booking</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><a href="index.html"><img src="logo.png" alt="Sonam's Makeover Logo" class="logo"></a><br><h1>Book Your Appointment</h1></header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="booking.html">Booking</a>
-    </nav>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+    </header>
     <main>
-        <form action="#" method="post">
-            <label for="name">Name:</label><input type="text" id="name" name="name"><br>
-            <label for="date">Date & Time:</label><input type="datetime-local" id="date" name="date"><br>
-            <label for="service">Service Type:</label><input type="text" id="service" name="service"><br>
-            <label for="phone">WhatsApp Number:</label><input type="text" id="phone" name="phone"><br>
-            <label for="notes">Notes:</label><textarea id="notes" name="notes"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
+        <h1>Book Your Appointment</h1>
+<form action="#" method="post">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="datetime-local" name="date" required>
+    <input type="text" placeholder="Service Type" name="service" required>
+    <input type="text" placeholder="WhatsApp Number" name="phone" required>
+    <textarea placeholder="Notes or preferences" name="notes"></textarea>
+    <button type="submit">Submit</button>
+</form>
     </main>
     <footer>
         <p>&copy; 2025 Sonam's Makeover</p>
