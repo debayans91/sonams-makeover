@@ -1,0 +1,43 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f0;
+    color: #333;
+}
+header {
+    background-color: peachpuff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    text-align: center;
+    margin: 10px 0;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #b95c5c;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffe5e5;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9999;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: peachpuff;
+}
