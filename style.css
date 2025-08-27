@@ -180,3 +180,22 @@ footer {
     width: 24px;
     height: 24px;
 }
+
+
+.price-chart {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.price-chart th, .price-chart td {
+    border: 1px solid #e5c0b5;
+    padding: 12px 15px;
+    text-align: left;
+}
+.price-chart th {
+    background-color: #f9dcd3;
+    font-weight: 600;
+}
+.price-chart tr:nth-child(even) {
+    background-color: #fff1ec;
+}
