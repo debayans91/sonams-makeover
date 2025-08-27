@@ -19,14 +19,34 @@
     </header>
     <main>
         <h1>Book Your Appointment</h1>
-<form action="#" method="post">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="datetime-local" name="date" required>
-    <input type="text" placeholder="Service Type" name="service" required>
-    <input type="text" placeholder="WhatsApp Number" name="phone" required>
-    <textarea placeholder="Notes or preferences" name="notes"></textarea>
+<form onsubmit="sendToWhatsApp(event)">
+    <input type="text" placeholder="Name" id="name" required>
+    <input type="datetime-local" id="date" required>
+    <input type="text" placeholder="Service Type" id="service" required>
+    <input type="text" placeholder="WhatsApp Number" id="phone" required>
+    <textarea placeholder="Notes or preferences" id="notes"></textarea>
     <button type="submit">Submit</button>
 </form>
+
+<script>
+function sendToWhatsApp(event) {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var date = document.getElementById('date').value;
+    var service = document.getElementById('service').value;
+    var phone = document.getElementById('phone').value;
+    var notes = document.getElementById('notes').value;
+
+    var message = `Name: ${name}%0ADate: ${date}%0AService: ${service}%0AWhatsApp: ${phone}%0ANotes: ${notes}`;
+
+    var whatsappURL = "https://wa.me/916289877941?text=" + message;
+
+    window.open(whatsappURL, '_blank');
+}
+</script>
+
+
     </main>
     <footer>
         <p>&copy; 2025 Sonam's Makeover</p>
